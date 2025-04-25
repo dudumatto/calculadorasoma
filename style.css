@@ -143,3 +143,77 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+
+/* From Uiverse.io by adamgiebl */
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #30cfd0;
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cyberpunk-checkbox:before {
+    content: "";
+    background-color: #30cfd0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.cyberpunk-checkbox-label {
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inputgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.input-group2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group2 label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-group2 input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.input-group2 input:focus {
+    border-color: #6e8efb;
+    outline: none;
+}

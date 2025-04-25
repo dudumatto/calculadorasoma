@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="login-container">
         <h2>Calculadora</h2>
@@ -18,7 +20,22 @@
                 <label for="val2">Valor 2</label>
                 <input type="number" id="val2" placeholder="">
             </div>
+            <div class="input-group2">
+                <label for="">Operação</label>
+            </div>
+            <div class="inputgroup">
+                <label class="cyberpunk-checkbox-label">
+                    <input type="checkbox" class="cyberpunk-checkbox" name="operador" value="+" onclick="selecionarApenasUm(this)">+</label>
+                <label class="cyberpunk-checkbox-label">
+                    <input type="checkbox" class="cyberpunk-checkbox" name="operador" value="-" onclick="selecionarApenasUm(this)">-</label>
+                <label class="cyberpunk-checkbox-label">
+                    <input type="checkbox" class="cyberpunk-checkbox" name="operador" value="/" onclick="selecionarApenasUm(this)">/</label>
+                <label class="cyberpunk-checkbox-label">
+                    <input type="checkbox" class="cyberpunk-checkbox" name="operador" value="*" onclick="selecionarApenasUm(this)">*</label>
+            </div>
+
             <button type="button" class="login-button" onclick="calcular()">Calcular</button>
+            
             <div class="divider"></div>
             <div class="input-group">
                 <label for="resultado">Resultado</label>
@@ -29,4 +46,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
